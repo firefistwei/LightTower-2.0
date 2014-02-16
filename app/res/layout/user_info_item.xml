@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000" >
+
+    <ImageView
+        android:id="@+id/user_info_item_avatar"
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:layout_margin="8dip"
+        android:background="@drawable/avatar_background"
+        android:src="@drawable/random_head0" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="6dip"
+        android:background="@drawable/white_background"
+        android:orientation="vertical"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip"
+        android:paddingTop="8dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/user_info_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="韦泽鹏"
+                android:textColor="#ff414346"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/user_info_item_tojoin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="发布了"
+                android:textColor="#ff999999"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/user_info_item_time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="5-12 5:00PM"
+                android:textColor="#ffaaaaaa"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/user_info_item_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dip"
+            android:layout_marginLeft="20dp"
+            android:text="3+3随机好友下午茶"
+            android:textColor="#ff397cbf"
+            android:textSize="14sp" />
+        
+         <TextView
+            android:id="@+id/user_info_item_enable"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginRight="5dp"
+            android:text="未结束"
+            android:textColor="#ff78ac04"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#fffafafa" />
+    </LinearLayout>
+
+</LinearLayout>

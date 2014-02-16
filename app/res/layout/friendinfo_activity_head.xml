@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/friendinfo_head_wallpager"
+            android:layout_width="fill_parent"
+            android:layout_height="220dip"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/friendinfo_head_wallpager"
+            android:background="@drawable/profile_avatar_frame_bg"
+            android:paddingLeft="8dip"
+            android:paddingTop="47dip" >
+
+            <ImageView
+                android:id="@+id/friendinfo_head_avatar"
+                android:layout_width="74dip"
+                android:layout_height="74dip"
+                android:layout_marginLeft="4dip"
+                android:layout_marginTop="4dip"
+                android:background="@drawable/avatar_background" />
+
+            <TextView
+                android:id="@+id/friendinfo_head_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/friendinfo_head_avatar"
+                android:layout_marginLeft="8dip"
+                android:layout_marginTop="4dip"
+                android:layout_toRightOf="@+id/friendinfo_head_avatar"
+                android:shadowColor="#ff000000"
+                android:shadowDx="0.0"
+                android:shadowDy="1.0"
+                android:shadowRadius="1.0"
+                android:singleLine="true"
+                android:textColor="#FFFFFF"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/friendinfo_head_gender_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/friendinfo_head_name"
+                android:layout_below="@+id/friendinfo_head_name"
+                android:layout_marginBottom="4dip"
+                android:layout_marginTop="4dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/friendinfo_head_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/friendinfo_head_constellation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:shadowColor="#ff000000"
+                    android:shadowDx="0.0"
+                    android:shadowDy="1.0"
+                    android:shadowRadius="1.0"
+                    android:singleLine="true"
+                    android:textColor="#FFFFFF"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/friendinfo_head_sig_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/friendinfo_head_gender_layout"
+                android:layout_below="@+id/friendinfo_head_gender_layout" >
+
+                <TextView
+                    android:id="@+id/friendinfo_head_sig"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingRight="8dip"
+                    android:singleLine="true"
+                    android:textColor="#ffb4b4b4"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fffafafa"
+        android:orientation="horizontal"
+        android:padding="8dip" >
+
+        <TextView
+            android:id="@+id/friendinfo_head_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/profile_btn_about"
+            android:gravity="center"
+            android:textColor="#ff999999"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/friendinfo_head_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/profile_btn_photos"
+            android:gravity="center"
+            android:textColor="#ff999999"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/friendinfo_head_times"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/profile_btn_times"
+            android:gravity="center"
+            android:textColor="#ff999999"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#ffefefef" />
+
+    <Button 
+        android:id="@+id/friendinfo_head_chat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="发送消息"
+        android:textSize="16dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/empty_btn04"
+        />
+
+</LinearLayout>

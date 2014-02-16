@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:duration = "150" android:drawable="@drawable/anim_radar0"/>
+    <item android:duration = "150" android:drawable="@drawable/anim_radar1"/>
+    <item android:duration = "150" android:drawable="@drawable/anim_radar2"/>
+    <item android:duration = "150" android:drawable="@drawable/anim_radar3"/>
+    <item android:duration = "150" android:drawable="@drawable/anim_radar4"/>
+    <item android:duration = "150" android:drawable="@drawable/anim_radar5"/>
+    <item android:duration = "150" android:drawable="@drawable/anim_radar6"/>
+    <item android:duration = "150" android:drawable="@drawable/anim_radar7"/>
+
+</animation-list>

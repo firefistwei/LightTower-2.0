@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:id="@+id/one_hot_layout"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/one_hot_atime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5-20 4:00PM"
+        android:layout_gravity="center"
+        android:textSize="10dp"
+        android:textColor="#78ac04" />
+
+    <TextView
+        android:id="@+id/one_hot_aname"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@drawable/img_bg"
+        android:text="3+3随机好友"
+        android:textSize="14dp" />
+
+    <View
+        android:layout_gravity="center"
+        android:layout_width="2px"
+        android:layout_height="10dp"
+        android:background="#78ac04" />
+
+</LinearLayout>

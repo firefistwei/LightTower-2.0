@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="app_name">灯塔</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">灯塔 2</string>
+    
+    <string name="tab_activelight">活动灯</string>
+    <string name="tab_friendlight">好友灯</string>
+    <string name="tab_messagelight">消息灯</string>
+    <string name="tab_settinglight">设置灯</string>
+
+</resources>

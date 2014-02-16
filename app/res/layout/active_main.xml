@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/title_bar3" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="活动灯"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/title_btn_fang"
+            android:clickable="true"
+            android:onClick="active_main_person"
+            android:orientation="horizontal"
+            android:padding="4dp" >
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/tiny_user" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="4dp"
+                android:text="个人灯"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottombg"
+        android:orientation="horizontal"
+        android:paddingLeft="1dip"
+        android:paddingRight="20dip" >
+        
+         <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/tiny_down"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="5dp"
+            android:text=" 分类显示"
+            android:textSize="16dp"
+            android:textColor="#4e4e4e"
+            android:background="@drawable/mm_title_btn_normal"
+            />
+
+        <Button
+            android:id="@+id/active_btn_around"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dip"
+            android:layout_marginTop="8dip"
+            android:layout_weight="1"
+            android:background="@drawable/bottomtabbutton_leftred"
+            android:gravity="center"
+            android:text="附近活动"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_marginTop="3px"
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:src="@drawable/bottomtabbutton_separation" />
+
+        <Button
+            android:id="@+id/active_btn_friend"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dip"
+            android:layout_marginTop="8dip"
+            android:layout_weight="1"
+            android:background="@drawable/bottomtabbutton_rightwhite"
+            android:text="好友活动"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+ 
+    <ListView
+        android:id="@+id/active_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+    </ListView>
+
+</LinearLayout>

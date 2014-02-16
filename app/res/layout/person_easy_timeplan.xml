@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="45dp"
+    android:layout_marginTop="2dp"
+    android:orientation="vertical"
+    android:background="@drawable/tiny_btn02">
+
+        <ImageView
+            android:id="@+id/person_easy_timeplan_image"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:src="@drawable/time_byyou" />
+
+            <TextView
+                android:id="@+id/person_easy_timeplan_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/person_easy_timeplan_image"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="16dp"
+                android:text="自定义"
+                android:textColor="#78ac04"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/person_easy_timeplan_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="16dp"
+                android:padding="2dp"
+                android:text="完成度: 50%"
+                android:textColor="#78ac04"
+                android:textSize="14sp" />
+
+    </RelativeLayout>
+

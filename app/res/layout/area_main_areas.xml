@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/grey_white_btn"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/area_main_areas_img1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/random_head3" />
+
+        <TextView
+            android:id="@+id/area_main_areas_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/area_main_areas_img1"
+            android:text="组名"
+            android:textColor="#78ac04"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/area_main_areas_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignBottom="@id/area_main_areas_text1"
+            android:text="8人"
+            android:textColor="#000"
+            android:textSize="16sp" />
+    </RelativeLayout>

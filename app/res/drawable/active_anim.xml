@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:duration = "150" android:drawable="@drawable/active_light_0"/>
+    <item android:duration = "150" android:drawable="@drawable/active_light_1"/>
+    <item android:duration = "150" android:drawable="@drawable/active_light_2"/>
+    <item android:duration = "150" android:drawable="@drawable/active_light_3"/>
+    <item android:duration = "150" android:drawable="@drawable/active_light_4"/>
+    <item android:duration = "150" android:drawable="@drawable/active_light_5"/>
+
+</animation-list>

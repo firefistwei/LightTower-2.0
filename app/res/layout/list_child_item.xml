@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     >
+
+    <LinearLayout
+        android:id="@+id/linearlayout_child"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        android:background="@drawable/friends_item_bg"
+        android:clickable="true"
+        >
+
+        <ImageView
+            android:id="@+id/child_img1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="3dp"
+            android:padding="3dp"
+            android:src="@drawable/random_head2" />
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_child"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+             >
+
+            <TextView
+                android:id="@+id/child_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:layout_marginBottom="5dp"
+                android:text="好友昵称"
+                android:textColor="#000000"
+                android:textSize="18dip" />
+            <ImageView 
+                android:id="@+id/child_img2"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_below="@id/child_tv1"
+                android:src="@drawable/light_0"
+                />
+
+            <TextView
+                android:id="@+id/child_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@id/child_tv1"
+                android:layout_toRightOf="@id/child_img2"
+                android:textColor="#454545"
+                android:textSize="12sp"
+                android:singleLine="true"
+                android:text="美好的一天，出去游玩什么的最好啦。" />
+            <TextView
+                android:id="@+id/child_tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/child_tv1"
+                android:textColor="#454545"
+                android:textSize="12sp"
+                android:singleLine="true"
+                android:text="【个性签名】一个今天，胜过两个明天。" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
